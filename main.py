@@ -32,7 +32,7 @@ def get_comand():
         dish_list = f.read()
         cook_book = get_cook_book_by_dishes()
         print('Наши блюда:\n', dish_list)
-        dishes = input('\nВведите блюдо: ')
+        dishes = input('\nВведите блюдо: ').lower().split(', ')
         person_count =int(input('Введите количество персон: '))
         pprint(cook_book)
         shop_list = get_shop_list_by_dishes(dishes, cook_book, person_count)

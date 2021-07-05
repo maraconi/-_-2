@@ -47,8 +47,6 @@ def get_command():
         print('Необходимо купить:')
         pprint(shop_list)
 
-
-
 get_cook_book_by_dishes()
 get_command()
 get_shop_list_by_dishes()
